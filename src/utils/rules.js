@@ -14,6 +14,10 @@ export const EmailRules = {
   },
 };
 
+export const groupNameRules = {
+  required: msg.groupName,
+};
+
 export const FirstNameRules = {
   required: msg.firstName,
   maxLength: {

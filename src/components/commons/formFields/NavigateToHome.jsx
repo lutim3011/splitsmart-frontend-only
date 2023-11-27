@@ -1,4 +1,6 @@
 import { Navigate } from "react-router-dom";
 
-const NavigateToHome = () => <Navigate to="/" replace={true} />;
+const NavigateToHome = ({ path }) => (
+  <Navigate to={path || "/"} replace={true} />
+);
 export default NavigateToHome;

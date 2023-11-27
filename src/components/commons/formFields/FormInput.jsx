@@ -20,6 +20,7 @@ const FormInput = ({
   disabled,
   maxLength,
   isRequired,
+  onEnter,
 }) => {
   const { ref, ...rest } = register(name, rules);
 
@@ -37,8 +38,13 @@ const FormInput = ({
     };
 
   function onKeyDown(ev) {
+    const keyCode = ev.code || ev.key;
     if (type === "number" && (ev.keyCode === 38 || ev.keyCode === 40)) {
       ev.preventDefault();
+    }
+
+    if (onEnter && keyCode === "Enter") {
+      onEnter();
     }
   }
 

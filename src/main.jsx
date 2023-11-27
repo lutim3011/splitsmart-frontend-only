@@ -11,10 +11,10 @@ const extendedConfig = {
 const myTheme = extendTheme(extendedConfig, proTheme);
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-import App from "src/App";
+import App from "src/components/Groups/Groups";
 import Signup from "src/components/Signup/Signup";
 import RecoilNexus from "recoil-nexus";
-import { Signin } from "./components/Signin";
+import { Signin } from "src/components/Signin";
 
 const routes = [
   {

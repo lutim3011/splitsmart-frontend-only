@@ -13,3 +13,8 @@ export const useIsAuthenticated = () => {
 
   return authenticated;
 };
+
+export const removeFromArray = (arr, value) => {
+  const newArr = arr?.filter((item) => item?.groupName !== value);
+  return [...newArr];
+};

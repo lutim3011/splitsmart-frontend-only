@@ -35,4 +35,5 @@ export const loginService = (data) => {
 
 export const logoutService = () => {
   setRecoil(loggedInUser, loggedInitialState);
+  localStorage?.removeItem(LOGGED_IN_USER);
 };

@@ -27,10 +27,10 @@ export const Signin = () => {
     formState: { errors, dirtyFields },
   } = useForm();
 
-  const [signedIn, setsignedIn] = useState(false);
+  const [signedIn, setSignedIn] = useState(false);
 
   const onSubmit = (data) =>
-    loginService(data) ? setsignedIn(true) : setsignedIn("error");
+    loginService(data) ? setSignedIn(true) : setSignedIn("error");
 
   const passwordValue = watch("password");
 

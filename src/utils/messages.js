@@ -5,6 +5,8 @@ import {
 } from "src/utils/const";
 
 export const msg = {
+  groupName: "Group Name is required",
+
   email: "Email is required",
   invalidEmail: "Please enter correct email address",
 
